@@ -1,0 +1,134 @@
+@import "https://fonts.googleapis.com/css?family=Indie+Flower";
+@import "https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css";
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  color: inherit; }
+
+body {
+  line-height: 1.75;
+  font-family: 'Roboto'; }
+
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../imgs/hero.jpg");
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #f3f3f4; }
+  .hero .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5% 10%; }
+    .hero .container .logo {
+      font-size: 3.5em;
+      font-family: 'Indie Flower'; }
+      .hero .container .logo span {
+        color: #741511; }
+    .hero .container .hero-content .title {
+      font-size: 3em;
+      margin-bottom: 20px; }
+    .hero .container .hero-content .btn {
+      border-radius: 5px;
+      background-color: #f3f3f4;
+      color: #40120f;
+      padding: 15px 30px;
+      text-transform: uppercase; }
+      .hero .container .hero-content .btn:hover {
+        color: #f3f3f4;
+        background-color: #40120f; }
+      .hero .container .hero-content .btn i {
+        padding-left: 10px; }
+    .hero .container .hero-links .nav .link {
+      display: inline-block;
+      padding: 10px 50px; }
+      .hero .container .hero-links .nav .link:hover {
+        color: #741511;
+        background-color: #f3f3f4; }
+
+.sign-in {
+  height: 100vh;
+  color: #f3f3f4;
+  background-color: #40120f; }
+  .sign-in .container {
+    height: 100%;
+    padding: 5% 10%; }
+    .sign-in .container h3 {
+      font-size: 3em; }
+    .sign-in .container form {
+      margin: 50px auto; }
+      .sign-in .container form .form-control {
+        margin: 20px auto; }
+        .sign-in .container form .form-control:nth-child(3) {
+          display: flex;
+          justify-content: space-between; }
+        .sign-in .container form .form-control label {
+          font-size: 1.25em; }
+        .sign-in .container form .form-control input {
+          background-color: transparent;
+          width: 100%;
+          height: 50px;
+          margin: 10px auto;
+          padding: 10px;
+          font-size: 1.5em;
+          border: 2px solid #741511;
+          border-radius: 5px;
+          outline: none; }
+          .sign-in .container form .form-control input::placeholder {
+            font-family: "fontawesome";
+            color: #741511; }
+        .sign-in .container form .form-control .red:hover {
+          color: #741511; }
+        .sign-in .container form .form-control .submit {
+          border: none;
+          border-radius: 5px;
+          background-color: #741511;
+          color: #f3f3f4;
+          padding: 15px 50px;
+          text-transform: uppercase; }
+          .sign-in .container form .form-control .submit:hover {
+            cursor: pointer;
+            color: #741511;
+            background-color: #f3f3f4; }
+    .sign-in .container .form-toggle {
+      font-size: 1.5em;
+      margin-bottom: 30px; }
+      .sign-in .container .form-toggle .white {
+        color: #7f7c8c; }
+    .sign-in .container hr {
+      width: 75%;
+      margin: auto; }
+    .sign-in .container .opti {
+      text-align: center;
+      font-size: 1.5em;
+      margin: 20px auto;
+      text-transform: uppercase; }
+    .sign-in .container .social-btns {
+      display: flex;
+      justify-content: center; }
+      .sign-in .container .social-btns .social {
+        height: 50px;
+        width: 200px;
+        border: none;
+        font-size: 1.25em;
+        outline: none;
+        cursor: pointer; }
+      .sign-in .container .social-btns .twitter {
+        background: #b3d4fc;
+        border-radius: 5px 0 0 5px; }
+      .sign-in .container .social-btns .facebook {
+        background: #3B5998;
+        border-radius: 0 5px 5px 0; }
+
+@media (min-width: 1300px) {
+  .flex {
+    display: flex; }
+    .flex .hero {
+      width: 70%; }
+    .flex .sign-in {
+      width: 30%; } }
